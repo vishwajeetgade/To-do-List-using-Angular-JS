@@ -1,0 +1,7 @@
+<ul  (click)="onClickCheckBox(todo)">
+    <div class="container">
+        <li style="display: inline;" [ngClass]="{'strike':!todo.isactive}">{{todo.title}} - {{todo.desc}}  </li>
+        <span class="mx-3 float-end" (click)="onClick(todo)"><a href="#"><i class="bi bi-trash" style="color: brown;"></i></a></span>
+        <!-- <button class="btn btn-sm btn-danger " (click)="onClick(todo)">Delete</button> -->
+    </div>
+</ul>
